@@ -7,7 +7,7 @@ public class Main {
         School school = new School();
 
         try {
-            Scanner scanner = new Scanner(new File("main/students.txt"));
+            Scanner scanner = new Scanner(new File("main/data/students.txt"));
             String line;
 
             while (scanner.hasNextLine()) {
@@ -27,7 +27,7 @@ public class Main {
                 school.addMember(student);
             }
 
-            scanner = new Scanner(new File("main/teachers.txt"));
+            scanner = new Scanner(new File("main/data/teachers.txt"));
 
             while (scanner.hasNextLine()) {
                 Teacher teacher = new Teacher();
